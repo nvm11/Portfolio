@@ -10,7 +10,7 @@ namespace WorkWithFiles
     {
         static void Main(string[] args)
         {
-            Dictionary<string, int> phonebook = new Dictionary<string, int>();
+            Dictionary<string, long> phonebook = new Dictionary<string, long>();
             Console.WriteLine("Welcome to the Phonebook Program");
             string userInput = "";
             while (userInput != "quit")
@@ -37,7 +37,7 @@ namespace WorkWithFiles
 
                         try
                         {
-                            phonebook[name] = int.Parse(number);
+                            phonebook[name] = long.Parse(number);
                         }
                         catch (Exception)
                         {
@@ -92,7 +92,7 @@ namespace WorkWithFiles
         /// saves the user's input to a phone book file
         /// </summary>
         /// <exception cref="Exception">any exception that occurs during file writing process</exception>
-        public static void Save(Dictionary<string, int> phonebook)
+        public static void Save(Dictionary<string, long> phonebook)
         {
             FileStream OutStream = File.OpenWrite("../../../phonebook.data");
             BinaryWriter output = null!;
@@ -103,7 +103,7 @@ namespace WorkWithFiles
                 output.Write(phonebook.Count);
 
                 //writes entire dict to the file
-                foreach (KeyValuePair<string, int> entry in phonebook)
+                foreach (KeyValuePair<string, long> entry in phonebook)
                 {
                     output.Write(entry.Key);
                     output.Write(entry.Value);
@@ -126,7 +126,7 @@ namespace WorkWithFiles
         /// <summary>
         /// Reads data from file back into program
         /// </summary>
-        public static Dictionary<string, int> Load(Dictionary<string, int> phonebook)
+        public static Dictionary<string, long> Load(Dictionary<string, long> phonebook)
         {
             phonebook.Clear();
             FileStream InStream = File.OpenRead("../../../phonebook.data");
@@ -134,13 +134,13 @@ namespace WorkWithFiles
 
             try
             {
-                phonebook = new Dictionary<string, int>();
+                phonebook = new Dictionary<string, long>();
                 input = new BinaryReader(InStream);
 
-                for (int i = 0; i < input.ReadInt32(); i++)
+                for (int i = 0; i < input.ReadInt64(); i++)
                 {
                     //adds key value pairs to dictionary
-                    phonebook.Add(input.ReadString(), input.ReadInt32());
+                    phonebook.Add(input.ReadString(), input.ReadInt64());
                 }
 
             }
@@ -161,9 +161,9 @@ namespace WorkWithFiles
         /// prints out the phone book
         /// </summary>
         /// <param name="phonebook">dictionary with names and numbers</param>
-        public static void Print(Dictionary<string, int> phonebook)
+        public static void Print(Dictionary<string, long> phonebook)
         {
-            foreach (KeyValuePair<string, int> entry in phonebook)
+            foreach (KeyValuePair<string, long> entry in phonebook)
             {
                 Console.WriteLine(entry.Key + ": " + entry.Value);
             }

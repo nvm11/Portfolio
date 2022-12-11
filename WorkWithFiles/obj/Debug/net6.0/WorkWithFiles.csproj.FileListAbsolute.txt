@@ -1,0 +1,15 @@
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\bin\Debug\net6.0\WorkWithFiles.exe
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\bin\Debug\net6.0\WorkWithFiles.deps.json
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\bin\Debug\net6.0\WorkWithFiles.runtimeconfig.json
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\bin\Debug\net6.0\WorkWithFiles.dll
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\bin\Debug\net6.0\WorkWithFiles.pdb
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\obj\Debug\net6.0\WorkWithFiles.csproj.AssemblyReference.cache
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\obj\Debug\net6.0\WorkWithFiles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\obj\Debug\net6.0\WorkWithFiles.AssemblyInfoInputs.cache
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\obj\Debug\net6.0\WorkWithFiles.AssemblyInfo.cs
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\obj\Debug\net6.0\WorkWithFiles.csproj.CoreCompileInputs.cache
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\obj\Debug\net6.0\WorkWithFiles.dll
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\obj\Debug\net6.0\refint\WorkWithFiles.dll
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\obj\Debug\net6.0\WorkWithFiles.pdb
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\obj\Debug\net6.0\WorkWithFiles.genruntimeconfig.cache
+C:\Users\natem\source\repos\Portfolio\WorkWithFiles\obj\Debug\net6.0\ref\WorkWithFiles.dll
