@@ -48,7 +48,7 @@ namespace WorkWithFiles
                         break;
 
                     case "remove":
-                        Console.WriteLine("Key to remove:");
+                        Console.Write("Person to remove:");
                         userInput = Console.ReadLine()!;
 
                         if (phonebook.ContainsKey(userInput))
