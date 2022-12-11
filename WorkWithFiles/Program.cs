@@ -3,6 +3,7 @@
 //Program to show understanding of Binary File I/O
 //as well as dictionaries. Reads and Writes a phonebook
 using System.Security.Principal;
+using System.Transactions;
 
 namespace WorkWithFiles
 {
@@ -17,7 +18,7 @@ namespace WorkWithFiles
             {
                 Console.WriteLine();
                 Console.WriteLine("What would you like to do:");
-                Console.WriteLine("Add, Remove, Print, Save, Load");
+                Console.WriteLine("Add, Remove, Print, Save, Load, Quit");
                 userInput = Console.ReadLine()!.Trim().ToLower();
                 Console.WriteLine();
 
@@ -28,7 +29,7 @@ namespace WorkWithFiles
                         string name = Console.ReadLine()!;
                         Console.Write("Phone number: ");
                         string number = Console.ReadLine()!;
-                        
+
                         if (number.Length != 10)
                         {
                             Console.WriteLine("Numbers must be 10 digits");
@@ -82,6 +83,10 @@ namespace WorkWithFiles
                         }
                         break;
 
+                    case "quit":
+                        Console.WriteLine("Goodbye");
+                        break;
+
                     default:
                         Console.WriteLine("Invalid Input");
                         break;
@@ -94,13 +99,13 @@ namespace WorkWithFiles
         /// <exception cref="Exception">any exception that occurs during file writing process</exception>
         public static void Save(Dictionary<string, long> phonebook)
         {
-            FileStream OutStream = File.OpenWrite("../../../phonebook.data");
+            FileStream OutStream = File.OpenWrite("phonebook.data");
             BinaryWriter output = null!;
             try
             {
                 output = new BinaryWriter(OutStream);
                 //first writes how many times to iterate
-                output.Write(phonebook.Count);
+                output.Write(phonebook.Count());
 
                 //writes entire dict to the file
                 foreach (KeyValuePair<string, long> entry in phonebook)
@@ -129,15 +134,15 @@ namespace WorkWithFiles
         public static Dictionary<string, long> Load(Dictionary<string, long> phonebook)
         {
             phonebook.Clear();
-            FileStream InStream = File.OpenRead("../../../phonebook.data");
+            FileStream InStream = File.OpenRead("phonebook.data");
             BinaryReader input = null!;
 
             try
             {
                 phonebook = new Dictionary<string, long>();
                 input = new BinaryReader(InStream);
-
-                for (int i = 0; i < input.ReadInt64(); i++)
+                int iterations = input.ReadInt32();
+                for (int i = 0; i < iterations; i++)
                 {
                     //adds key value pairs to dictionary
                     phonebook.Add(input.ReadString(), input.ReadInt64());
