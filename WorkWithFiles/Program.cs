@@ -28,6 +28,12 @@ namespace WorkWithFiles
                         string name = Console.ReadLine()!;
                         Console.Write("Phone number: ");
                         string number = Console.ReadLine()!;
+                        
+                        if (number.Length != 10)
+                        {
+                            Console.WriteLine("Numbers must be 10 digits");
+                            continue;
+                        }
 
                         try
                         {
