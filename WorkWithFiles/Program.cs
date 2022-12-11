@@ -2,6 +2,8 @@
 //12/10/22
 //Program to show understanding of Binary File I/O
 //as well as dictionaries. Reads and Writes a phonebook
+using System.Security.Principal;
+
 namespace WorkWithFiles
 {
     internal class Program
@@ -9,12 +11,82 @@ namespace WorkWithFiles
         static void Main(string[] args)
         {
             Dictionary<string, int> phonebook = new Dictionary<string, int>();
+            Console.WriteLine("Welcome to the Phonebook Program");
+            string userInput = "";
+            while (userInput != "quit")
+            {
+                Console.WriteLine();
+                Console.WriteLine("What would you like to do:");
+                Console.WriteLine("Add, Remove, Print, Save, Load");
+                userInput = Console.ReadLine()!.Trim().ToLower();
+                Console.WriteLine();
+
+                switch (userInput)
+                {
+                    case "add":
+                        Console.Write("Name of person: ");
+                        string name = Console.ReadLine()!;
+                        Console.Write("Phone number: ");
+                        string number = Console.ReadLine()!;
+
+                        try
+                        {
+                            phonebook[name] = int.Parse(number);
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("Invalid input");
+                        }
+
+                        break;
+
+                    case "remove":
+                        Console.WriteLine("Key to remove:");
+                        userInput = Console.ReadLine()!;
+
+                        if (phonebook.ContainsKey(userInput))
+                        {
+                            phonebook.Remove(userInput);
+                        }
+                        break;
+
+                    case "print":
+                        Print(phonebook);
+                        break;
+
+                    case "save":
+                        try
+                        {
+                            Save(phonebook);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message);
+                        }
+                        break;
+
+                    case "load":
+                        try
+                        {
+                            phonebook = Load(phonebook);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message);
+                        }
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid Input");
+                        break;
+                }
+            }
         }
         /// <summary>
         /// saves the user's input to a phone book file
         /// </summary>
         /// <exception cref="Exception">any exception that occurs during file writing process</exception>
-        public void Save(Dictionary<string, int> phonebook)
+        public static void Save(Dictionary<string, int> phonebook)
         {
             FileStream OutStream = File.OpenWrite("../../../phonebook.data");
             BinaryWriter output = null!;
@@ -48,7 +120,7 @@ namespace WorkWithFiles
         /// <summary>
         /// Reads data from file back into program
         /// </summary>
-        public Dictionary<string, int> Load(Dictionary<string, int> phonebook)
+        public static Dictionary<string, int> Load(Dictionary<string, int> phonebook)
         {
             phonebook.Clear();
             FileStream InStream = File.OpenRead("../../../phonebook.data");
@@ -83,9 +155,9 @@ namespace WorkWithFiles
         /// prints out the phone book
         /// </summary>
         /// <param name="phonebook">dictionary with names and numbers</param>
-        public void Print(Dictionary<string, int> phonebook)
+        public static void Print(Dictionary<string, int> phonebook)
         {
-            foreach(KeyValuePair<string, int> entry in phonebook)
+            foreach (KeyValuePair<string, int> entry in phonebook)
             {
                 Console.WriteLine(entry.Key + ": " + entry.Value);
             }
