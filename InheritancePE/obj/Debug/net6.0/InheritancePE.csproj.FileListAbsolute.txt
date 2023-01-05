@@ -1,0 +1,15 @@
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\bin\Debug\net6.0\InheritancePE.exe
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\bin\Debug\net6.0\InheritancePE.deps.json
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\bin\Debug\net6.0\InheritancePE.runtimeconfig.json
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\bin\Debug\net6.0\InheritancePE.dll
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\bin\Debug\net6.0\InheritancePE.pdb
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\obj\Debug\net6.0\InheritancePE.csproj.AssemblyReference.cache
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\obj\Debug\net6.0\InheritancePE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\obj\Debug\net6.0\InheritancePE.AssemblyInfoInputs.cache
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\obj\Debug\net6.0\InheritancePE.AssemblyInfo.cs
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\obj\Debug\net6.0\InheritancePE.csproj.CoreCompileInputs.cache
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\obj\Debug\net6.0\InheritancePE.dll
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\obj\Debug\net6.0\refint\InheritancePE.dll
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\obj\Debug\net6.0\InheritancePE.pdb
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\obj\Debug\net6.0\InheritancePE.genruntimeconfig.cache
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InheritancePE\obj\Debug\net6.0\ref\InheritancePE.dll
