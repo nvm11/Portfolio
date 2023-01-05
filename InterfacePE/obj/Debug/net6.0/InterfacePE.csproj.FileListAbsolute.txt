@@ -1,0 +1,15 @@
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\bin\Debug\net6.0\InterfacePE.exe
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\bin\Debug\net6.0\InterfacePE.deps.json
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\bin\Debug\net6.0\InterfacePE.runtimeconfig.json
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\bin\Debug\net6.0\InterfacePE.dll
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\bin\Debug\net6.0\InterfacePE.pdb
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\obj\Debug\net6.0\InterfacePE.csproj.AssemblyReference.cache
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\obj\Debug\net6.0\InterfacePE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\obj\Debug\net6.0\InterfacePE.AssemblyInfoInputs.cache
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\obj\Debug\net6.0\InterfacePE.AssemblyInfo.cs
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\obj\Debug\net6.0\InterfacePE.csproj.CoreCompileInputs.cache
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\obj\Debug\net6.0\InterfacePE.dll
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\obj\Debug\net6.0\refint\InterfacePE.dll
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\obj\Debug\net6.0\InterfacePE.pdb
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\obj\Debug\net6.0\InterfacePE.genruntimeconfig.cache
+C:\Users\natem\source\repos\105-personal-repo-nvm11\PEs\InterfacePE\obj\Debug\net6.0\ref\InterfacePE.dll
